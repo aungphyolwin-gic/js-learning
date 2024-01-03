@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JS Output testing</h1>
+    <p id="test"></p>
+    
+    
+    <script>
+        const employee = {id : "gic001", name : "Aung", position : "intern", currentWork : function (){return "Learning JS"}};
+
+        employee.name = "Aung Phyo";  // chargine object.properties value
+
+        //accessing properties value and function
+        document.getElementById("test").innerHTML = employee.name + " currently working : " + employee.currentWork();
+    </script>
+</body>
+</html>

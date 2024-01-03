@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JS Output testing</h1>
+    <p id="test1"></p>
+    <p id="test2"></p>
+    <p id="test3"></p>
+    <p id="test4"></p>
+    <p id="test5"></p>
+    <p id="test6"></p>
+    
+    
+    <script>
+        const a = 5, b = 3;
+        let result = a+b;
+
+        
+        document.getElementById("test1").innerHTML = "Addition : " + result;
+
+        result = a**b;
+        document.getElementById("test2").innerHTML = "Exponent : " + result;
+
+        result *= 2;
+        document.getElementById("test3").innerHTML = "Assignment : " + result;
+
+        result = a+b+" Hello " + a+b;
+        document.getElementById("test4").innerHTML = "String Addition : " + result;
+
+        result = a && b;
+        document.getElementById("test5").innerHTML = "Logical : " + result;
+
+        result = [2,3];
+        document.getElementById("test5").innerHTML = "typeOf operator : " + typeof result;
+       
+    </script>
+</body>
+</html>

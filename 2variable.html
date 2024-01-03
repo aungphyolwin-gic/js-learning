@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JS Variable testing</h1>
+    <p id="test">first</p>
+    <p id="test1">second</p>
+    <p id="test2">third</p>
+
+    <script>
+        var a = 1;
+        var a = 2;
+
+        let b = 3;
+        // let b = 4;  //can't redeclare let variable
+
+        const c = 5;
+        // const c = 6;
+        // c = 7;
+
+        document.getElementById("test").innerHTML = "First : a is " + a + " b is " + b + "  c is " + c;
+
+        if(a>1){
+            var a = 8;
+            let b = 9;
+            const c = 10;
+            document.getElementById("test1").innerHTML = "First : a is " + a + " b is " + b + "  c is " + c;
+        }
+
+         document.getElementById("test2").innerHTML = "Third : a is " + a + " b is " + b + "  c is " + c;
+       
+    </script>
+</body>
+</html>

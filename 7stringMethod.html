@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JS Output testing</h1>
+    <p id="test"></p>
+    <p id="slice"></p>
+    <p id="pad"></p>
+    <p id="repeat"></p>
+    <p id="replace"></p>
+    
+    
+    <script>
+        const str1 = "Hello, My name is \"Aung Phyo Liwn \"";
+        const str2 = "Hello, My name is 'Aung Phyo Liwn'";
+        const str3 = 'Hello, My name is "Aung Phyo Liwn "';
+
+        document.getElementById("test").innerHTML = str1.slice(10,14).concat(" : ").concat(str2.substr(19,9));
+        document.getElementById("slice").innerHTML = "Last Name : " + str3.trimEnd().substr(-6).toUpperCase();
+
+        let text = "A";
+
+        document.getElementById("pad").innerHTML = text.padEnd(4,"P");
+
+        text = "I love cats. but Cats are very easy to love. Cats are very popular.";
+        document.getElementById("repeat").innerHTML = text.repeat(3);
+        document.getElementById("replace").innerHTML = text.replaceAll("Cats","Dogs");
+
+
+    </script>
+</body>
+</html>
