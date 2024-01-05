@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JS Array testing</h1>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    
+    <script>
+        const myArray = ["Apple","Banana","Orange","Coconut"];
+        let result;
+        myArray.push("Watermelon");
+        document.getElementById("demo1").innerHTML = myArray;
+        result = myArray.shift();
+        document.getElementById("demo2").innerHTML = result;
+        result = myArray.unshift(["PineApple","Cherry"]);
+        document.getElementById("demo3").innerHTML = result;
+        
+        document.getElementById("demo4").innerHTML = typeof myArray.toString();
+        
+        delete myArray[0];
+        // document.getElementById("demo5").innerHTML = myArray[0];
+        
+        // myArray.splice(0,1,["Mango","Lemon"]);
+         result = myArray.slice(2,4)
+        document.getElementById("demo5").innerHTML = myArray
+        
+        
+        // document.getElementById("demo5").innerHTML = myArray.sort().reverse();
+        document.getElementById("demo5").innerHTML = Math.random();
+
+        
+    
+
+    </script>
+</body>
+</html>
